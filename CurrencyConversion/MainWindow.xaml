@@ -1,0 +1,18 @@
+﻿<Window x:Class="CurrencyConversion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CurrencyConversion"
+        mc:Ignorable="d"
+        Title="Convert number to words" Height="450" Width="800" FontSize="17">
+    <Grid Margin="10" >
+
+        <Label Content="Enter a number" HorizontalAlignment="Left" Height="45" Margin="71,62,0,0" VerticalAlignment="Top" Width="254"/>
+        <TextBox Name="txtNumber" HorizontalAlignment="Left" Height="45" Margin="258,62,0,0" Text="" VerticalAlignment="Top" Width="208" VerticalContentAlignment="Center"/>
+        <Button Content="Convert number to words" HorizontalAlignment="Left" Height="48" Margin="504,62,0,0" VerticalAlignment="Top" Width="208" Click="Button_Click"/>
+        <TextBlock Name="outputText" Text="{Binding InstructionLabel}" TextWrapping="Wrap" HorizontalAlignment="Center" MaxWidth="900" Height="auto" Margin="0,244,0,0" VerticalAlignment="Top" Width="auto" />
+        <TextBlock Name="ExceptionTxt" Foreground="Red" Text="{Binding InstructionLabel}" TextWrapping="Wrap" MaxWidth="800"  HorizontalAlignment="Left" Height="auto" Margin="156,267,0,0" VerticalAlignment="Top" Width="493" TextAlignment="Center"/>
+
+    </Grid>
+</Window>
